@@ -28,9 +28,35 @@
 			</header>
 		</div>
 
+<!--  wrong
+(.container.content>.row>(.col-sm-12.col-md-6>(.row>(.col-xs-6.col-sm-4>img.img-responsive[src=img/doctor1.jpg])+(.col-xs-6.col-sm-4>h3{Dr. Joe Smith})+(.col-xs-12.col-sm-4>p{lorem25}))*2+(.row>table)) -->
 
-(.container.content>.row(.col-sm-12.col-md-6>.row(.col-xs-6.col-sm-4>img.img-responsive[src=img/doctor1.jpg])+(.col-xs-6.col-sm-4>h3{Dr. Joe Smith})+(.col-xs-12.col-sm-4>p{lorem25}))*2+(.row>table))
 
+<div class="container content">
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+			<div class="row">
+				<div class="col-xs-6 col-sm-4"><img src="img/doctor1.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-6 col-sm-8">
+					<h3>Dr. Joe Smith</h3>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odio reprehenderit sint aut, in velit deleniti vero architecto eaque officiis officia minus tenetur, dicta aliquid!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-4"><img src="img/doctor2.jpg" alt="" class="img-responsive"></div>
+				<div class="col-xs-6 col-sm-8">
+					<h3>Dr. Jane Smith</h3>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laboriosam omnis aspernatur odit atque dolorem nihil minima nulla, quam, veniam, iusto nemo reiciendis placeat obcaecati.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!--  FOOTER section-->
 
 <footer class="container-fluid">
